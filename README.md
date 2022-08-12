@@ -8,3 +8,5 @@ They are compiled in such a way as to minimize routine work and simplify the dev
 
 Accepts an input prompt string as an argument
 Returns any integer entered from the keyboard
+
+>int anyIntNumber = GetUserInputInt("Enter any integer: ");
