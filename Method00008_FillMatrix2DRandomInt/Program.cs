@@ -1,6 +1,6 @@
 ﻿
 
-int[,] FillMatrixTwoDimension(int[,] matrix, int min, int max)
+void FillMatrixTwoDimension(int[,] matrix, int min, int max)
 {
     Random random = new Random();
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -10,5 +10,4 @@ int[,] FillMatrixTwoDimension(int[,] matrix, int min, int max)
             matrix[i, j] = random.Next(min, max);
         }
     }
-    return matrix;
 }
