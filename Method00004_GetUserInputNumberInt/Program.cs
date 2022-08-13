@@ -7,12 +7,13 @@ int[] GetUserInputNumbersInt(string userInputNumberString)
     int[] numberArray = new int[stringArray.Length];
     for (int i = 0; i < numberArray.Length; i++)
     {
-        if (stringArray[i] == "" || Convert.ToInt32(stringArray[i]) == null)
+        if (stringArray[i] == "" || stringArray[i] == " "
+            || Convert.ToInt32(stringArray[i]) == null)
         {
-            Console.WriteLine("Ошибка ввода данных.");
-            break;
+            Console.WriteLine("Ошибка ввода данных. Попробуйте еще раз запустить программу и ввести данные корректно.");
+            Environment.Exit(0);
         }
-        numberArray[i] = Convert.ToInt32(stringArray[i]);
+        else numberArray[i] = Convert.ToInt32(stringArray[i]);
     }
     return numberArray;
 }
