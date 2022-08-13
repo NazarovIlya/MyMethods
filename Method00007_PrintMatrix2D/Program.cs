@@ -1,6 +1,6 @@
 ﻿
 
-void PrintMatrixTwoDimensionalInt(int[,] matrixTwoDimensional, string userOutputString)
+void PrintMatrix2DInt(int[,] matrixTwoDimensional, string userOutputString)
 {
     Console.WriteLine(userOutputString);
     for (int i = 0; i < matrixTwoDimensional.GetLength(0); i++)
