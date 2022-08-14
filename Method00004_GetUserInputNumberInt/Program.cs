@@ -4,7 +4,6 @@ int[] GetUserInputNumbersInt(string userInputNumberString)
 {
     Console.WriteLine(userInputNumberString);
     string[] stringArray = Console.ReadLine().Split(",");
-    //int[] numberArray = new int[stringArray.Length];
     for (int i = 0; i < stringArray.Length; i++)
     {
         if (stringArray[i] == string.Empty || stringArray[i] == " "
