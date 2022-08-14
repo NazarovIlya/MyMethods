@@ -1,5 +1,5 @@
 ﻿
-int[] GetUserInputNumbersString(string userInputNumberString)
+string[] GetUserInputNumbersString(string userInputNumberString)
 {
     Console.WriteLine(userInputNumberString);
     string[] stringArray = Console.ReadLine().Split(",");
