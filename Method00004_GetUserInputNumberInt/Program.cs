@@ -17,12 +17,12 @@ string[] GetUserInputNumbersString(string userInputNumberString)
 
 int[] ConvertUserInputNumbersInt(string[] userNumberString)
 {
-    int[] numberArray = new int[stringArray.Length];
-    for (int i = 0; i < numberArray.Length; i++)
+    int[] userNumberInt = new int[userNumberString.Length];
+    for (int i = 0; i < userNumberString.Length; i++)
     {
-        numberArray[i] = Convert.ToInt32(stringArray[i]);
+        userNumberInt[i] = Convert.ToInt32(stringArray[i]);
     }
-    return numberArray;
+    return userNumberInt;
 }
 
 string[] inputString = GetUserInputNumbersString("Enter any integer: ");
