@@ -1,18 +1,18 @@
 ﻿
-string[] GetUserInputNumbersString(string userInputNumberString)
+string[] GetUserInputNumbersString(string userInputTextString)
 {
-    Console.WriteLine(userInputNumberString);
-    string[] stringArray = Console.ReadLine().Split(",");
-    for (int i = 0; i < stringArray.Length; i++)
+    Console.WriteLine(userInputTextString);
+    string[] userInputString = Console.ReadLine().Split(",");
+    for (int i = 0; i < userInputString.Length; i++)
     {
-        if (stringArray[i] == string.Empty || stringArray[i] == " "
-            || Convert.ToInt32(stringArray[i]) == null)
+        if (userInputString[i] == string.Empty || userInputString[i] == " "
+            || Convert.ToInt32(userInputString[i]) == null)
         {
             Console.WriteLine("Ошибка ввода данных. Попробуйте еще раз запустить программу и ввести данные корректно.");
             Environment.Exit(0);
         }
     }
-    return stringArray;
+    return userInputString;
 }
 
 int[] ConvertUserInputNumbersInt(string[] userNumberString)
@@ -20,7 +20,7 @@ int[] ConvertUserInputNumbersInt(string[] userNumberString)
     int[] userNumberInt = new int[userNumberString.Length];
     for (int i = 0; i < userNumberString.Length; i++)
     {
-        userNumberInt[i] = Convert.ToInt32(stringArray[i]);
+        userNumberInt[i] = Convert.ToInt32(userNumberString[i]);
     }
     return userNumberInt;
 }
