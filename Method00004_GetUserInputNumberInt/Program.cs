@@ -3,6 +3,11 @@ string[] GetUserInputNumbersString(string userInputTextString)
 {
     Console.WriteLine(userInputTextString);
     string[] userInputString = Console.ReadLine().Split(",");
+    return userInputString;
+}
+
+string[] CheckUserInputToInt(string[] userInputString)
+{
     for (int i = 0; i < userInputString.Length; i++)
     {
         if (userInputString[i] == string.Empty || userInputString[i] == " "
@@ -26,4 +31,5 @@ int[] ConvertUserInputNumbersInt(string[] userNumberString)
 }
 
 string[] inputString = GetUserInputNumbersString("Enter any integer: ");
+inputString = CheckUserInputToInt(inputString);
 int[] inputInt = ConvertUserInputNumbersInt(inputString);
