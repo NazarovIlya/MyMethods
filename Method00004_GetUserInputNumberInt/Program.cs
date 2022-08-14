@@ -5,7 +5,7 @@ int[] GetUserInputNumbersInt(string userInputNumberString)
     Console.WriteLine(userInputNumberString);
     string[] stringArray = Console.ReadLine().Split(",");
     //int[] numberArray = new int[stringArray.Length];
-    for (int i = 0; i < numberArray.Length; i++)
+    for (int i = 0; i < stringArray.Length; i++)
     {
         if (stringArray[i] == string.Empty || stringArray[i] == " "
             || Convert.ToInt32(stringArray[i]) == null)
@@ -13,7 +13,6 @@ int[] GetUserInputNumbersInt(string userInputNumberString)
             Console.WriteLine("Ошибка ввода данных. Попробуйте еще раз запустить программу и ввести данные корректно.");
             Environment.Exit(0);
         }
-        //else numberArray[i] = Convert.ToInt32(stringArray[i]);
     }
     return stringArray;
 }
