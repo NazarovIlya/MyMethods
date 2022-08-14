@@ -1,6 +1,5 @@
 ﻿
-
-int[] GetUserInputNumbersInt(string userInputNumberString)
+int[] GetUserInputNumbersString(string userInputNumberString)
 {
     Console.WriteLine(userInputNumberString);
     string[] stringArray = Console.ReadLine().Split(",");
@@ -26,5 +25,5 @@ int[] ConvertUserInputNumbersInt(string[] userNumberString)
     return numberArray;
 }
 
-string[] inputString = GetUserInputNumbersInt("Enter any integer: ");
+string[] inputString = GetUserInputNumbersString("Enter any integer: ");
 int[] inputInt = ConvertUserInputNumbersInt(inputString);
