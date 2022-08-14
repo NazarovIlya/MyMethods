@@ -27,3 +27,6 @@ int[] ConvertUserInputNumbersInt(string[] userNumberString)
     }
     return numberArray;
 }
+
+string[] inputString = GetUserInputNumbersInt("Enter any integer: ");
+int[] inputInt = ConvertUserInputNumbersInt(inputString);
