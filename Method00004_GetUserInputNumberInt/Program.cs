@@ -7,7 +7,7 @@ int[] GetUserInputNumbersInt(string userInputNumberString)
     int[] numberArray = new int[stringArray.Length];
     for (int i = 0; i < numberArray.Length; i++)
     {
-        if (stringArray[i] == "" || stringArray[i] == " "
+        if (stringArray[i] == string.Empty || stringArray[i] == " "
             || Convert.ToInt32(stringArray[i]) == null)
         {
             Console.WriteLine("Ошибка ввода данных. Попробуйте еще раз запустить программу и ввести данные корректно.");
