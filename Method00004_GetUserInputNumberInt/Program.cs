@@ -30,11 +30,11 @@ int[] ConvertUserInputNumbersInt(string[] userNumberString)
     return userNumberInt;
 }
 
-string[] inputString = GetUserInputNumbersString("Enter any integer: ");
+string[] inputString = GetUserInputNumbersString("Enter any integer (any text): ");
 inputString = CheckUserInputToInt(inputString);
 int[] inputInt = ConvertUserInputNumbersInt(inputString);
 
-//! it was a single method
+//! it was like this
 // int[] GetUserInputNumbersInt(string userInputNumberString)
 // {
 //     Console.WriteLine(userInputNumberString);
